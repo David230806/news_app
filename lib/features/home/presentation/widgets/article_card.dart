@@ -8,7 +8,6 @@ import 'package:news_app/features/home/data/models/viewed_article.dart';
 
 class ArticleCard extends StatelessWidget {
   final ViewedArticleModel article;
-  final List<Color> colors = [AppColors.blue, AppColors.yellow, AppColors.pink];
 
   ArticleCard({super.key, required this.article});
 
@@ -21,7 +20,7 @@ class ArticleCard extends StatelessWidget {
         horizontal: 40,
       ),
       decoration: BoxDecoration(
-        color: colors[Random().nextInt(3)],
+        color: article.color,
         borderRadius: BorderRadius.circular(20),
       ),
       child: Column(

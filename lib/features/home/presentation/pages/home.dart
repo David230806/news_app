@@ -44,9 +44,14 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: AppColors.primary,
+        centerTitle: false,
+        leadingWidth: 60,
+        leading: SizedBox(),
         title: BaseText(
           "News",
           fontSize: 28,
+          color: AppColors.inversedPrimary,
           fontWeight: FontWeight.w700,
         ),
       ),

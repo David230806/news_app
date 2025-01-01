@@ -1,3 +1,5 @@
+import 'package:flutter/material.dart';
+
 class ViewedArticleEntity {
   final String url;
   final String section;
@@ -8,6 +10,7 @@ class ViewedArticleEntity {
   final String source;
   final String publishedDate;
   final int id;
+  final Color color;
 
   ViewedArticleEntity({
     required this.url,
@@ -19,5 +22,6 @@ class ViewedArticleEntity {
     required this.publishedDate,
     required this.source,
     required this.id,
+    required this.color,
   });
 }
