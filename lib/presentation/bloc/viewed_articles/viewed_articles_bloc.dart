@@ -1,7 +1,7 @@
 import 'package:bloc/bloc.dart';
 import 'package:meta/meta.dart';
-import 'package:news_app/features/home/data/models/viewed_article.dart';
-import 'package:news_app/features/home/domain/repository/most_viewed_repository.dart';
+import 'package:news_app/data/models/viewed_article.dart';
+import 'package:news_app/domain/repository/most_viewed_repository.dart';
 
 part 'viewed_articles_event.dart';
 part 'viewed_articles_state.dart';

@@ -1,7 +1,7 @@
 import 'dart:math';
 
 import 'package:bloc/bloc.dart';
-import 'package:news_app/features/home/data/models/viewed_article.dart';
+import 'package:news_app/data/models/viewed_article.dart';
 
 class ArticlesManagerCubit extends Cubit<List<ViewedArticleModel>> {
   ArticlesManagerCubit() : super([]);

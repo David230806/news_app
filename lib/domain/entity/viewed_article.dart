@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:news_app/data/models/media.dart';
 
 class ViewedArticleEntity {
   final String url;
@@ -11,6 +12,7 @@ class ViewedArticleEntity {
   final String publishedDate;
   final int id;
   final Color color;
+  List<MediaModel> media;
 
   ViewedArticleEntity({
     required this.url,
@@ -23,5 +25,6 @@ class ViewedArticleEntity {
     required this.source,
     required this.id,
     required this.color,
+    required this.media,
   });
 }

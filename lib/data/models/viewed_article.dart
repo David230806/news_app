@@ -2,7 +2,8 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:news_app/core/theme/app_colors.dart';
-import 'package:news_app/features/home/domain/entity/viewed_article.dart';
+import 'package:news_app/data/models/media.dart';
+import 'package:news_app/domain/entity/viewed_article.dart';
 
 class ViewedArticleModel extends ViewedArticleEntity {
   ViewedArticleModel({
@@ -16,6 +17,7 @@ class ViewedArticleModel extends ViewedArticleEntity {
     required super.source,
     required super.id,
     required super.color,
+    required super.media,
   });
 
   factory ViewedArticleModel.fromJson(Map<String, dynamic> json) {
@@ -32,6 +34,7 @@ class ViewedArticleModel extends ViewedArticleEntity {
       publishedDate: json['published_date'],
       source: json['source'],
       id: json['id'],
+      media: (json['media'] as List).map((media) => MediaModel.fromJson(media)).toList(),
     );
   }
 }

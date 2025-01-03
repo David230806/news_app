@@ -2,8 +2,8 @@ import 'package:dartz/dartz.dart';
 import 'package:news_app/core/configs/base_urls.dart';
 import 'package:news_app/core/dio/dio_requests.dart';
 import 'package:news_app/core/errors/exceprions.dart';
-import 'package:news_app/features/home/data/models/viewed_article.dart';
-import 'package:news_app/features/home/domain/repository/most_viewed_repository.dart';
+import 'package:news_app/data/models/viewed_article.dart';
+import 'package:news_app/domain/repository/most_viewed_repository.dart';
 
 class MostViewedRepositoryImpl extends MostViewedRepository {
   final DioRequests _dioRequests = DioRequests();
